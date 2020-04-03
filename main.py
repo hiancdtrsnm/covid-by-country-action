@@ -36,5 +36,7 @@ def main():
     path = 'data/paises-info-dias.json'
     json.dump(data, open(path, 'w'))
 
+    print(json.dumps(data, indent=2))
+
 if __name__ == "__main__":
     main()
