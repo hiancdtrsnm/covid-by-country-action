@@ -26,7 +26,7 @@ def get_json_info():
                 data.append(day['confirmed'])
                 fecha = day["date"]
         inf[c] = data
-    c = {"paises": inf, "dia-actualizacion": fecha}
+    c = {"paises": inf, "dia-actualizacion": change_date(fecha)}
     return c
 
 def main():
