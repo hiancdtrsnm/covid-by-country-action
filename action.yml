@@ -1,0 +1,13 @@
+name: "Python Container Action Template"
+description: "Update json with countries info by days"
+author: "Hian Cañizares"
+inputs:
+  myInput:
+    description: "Input to use"
+    default: "world"
+outputs:
+  myOutput:
+    description: "Output from the action"
+runs:
+  using: "docker"
+  image: "Dockerfile"
